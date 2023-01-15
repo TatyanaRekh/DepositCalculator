@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.Scanner; //После команд import следует делать пустую строчку
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -14,6 +14,7 @@ public class Main {
         int typeOfDeposit = scanner.nextInt();
 
         System.out.println("Результат вклада: " + amount + " за " + depositPeriod
-                + " лет превратятся в " + depositCalculation.getFinalAmount (amount, depositPeriod, typeOfDeposit));
+                + " лет превратятся в " + depositCalculation.getFinalAmount (amount, depositPeriod, typeOfDeposit)); 
+        //Отлично сделанный перенос! Я даже понял, что сам сделал здесь ошибку :)
     }
 }
